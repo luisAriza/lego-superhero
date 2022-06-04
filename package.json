@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "stylus": "stylus -w styles/main.styl"
+    "stylus": "stylus -w src/styles/main.styl"
   },
   "author": "Luis Ariza <luismanuelariza@hotmail.com>",
   "license": "MIT",
