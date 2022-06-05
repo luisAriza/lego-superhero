@@ -4,8 +4,8 @@
   --xs: 13px;
   --sm: 16px;
   --md: 20px;
-  --lg: 24px;
-  --xl: 28px;
+  --lg: 28px;
+  --xl: 40px;
   --primary-color: #ffd602;
   --secondary-color: #036cb6;
   --variation-color: #d5040a;
@@ -24,12 +24,13 @@
   height: 100vh;
   position: relative;
   font-family: var(--Font1);
+  padding-left: 40px;
   overflow: hidden;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 20% 50% 30%;
   grid-template-areas: "header  aside"
                         "main    aside"
@@ -75,6 +76,38 @@
 @keyframes navbar {
   0% {
     transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.main-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 35px;
+  animation: main 2s 0.5s ease-in-out;
+}
+.main-content p:first-child {
+  margin: 0 0 -12px 40px;
+  font-size: var(--lg);
+  font-weight: 400;
+}
+.main-content h1 {
+  margin-bottom: 28px;
+  font-size: var(--xl);
+  font-weight: 900;
+}
+.main-content p:last-child {
+  width: 65%;
+  font-weight: 300;
+}
+
+@keyframes main {
+  0% {
+    transform: translateY(-400px);
   }
   100% {
     transform: translateY(0px);
