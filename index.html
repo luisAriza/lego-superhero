@@ -44,26 +44,49 @@
 			</figure>
 		</section>
 		<section class="footer">
-			<figure>
+			<figure class="btn-spiderman">
 				<img src="./src/assets/images/spiderman.png" alt="Lego SpiderMan">
 			</figure>
-			<figure>
+			<figure class="btn-robin">
 				<img src="./src/assets/images/robin.png" alt="Lego Robin">
 			</figure>
-			<figure>
+			<figure class="btn-batman">
 				<img src="./src/assets/images/batman.webp" alt="Lego BatMan">
 			</figure>
 		</section>
 	</section>
 	<!-- Loader -->
-	<!-- <section class="loader">
+	<section class="loader">
 		<div></div>
 		<div></div>
 		<div></div>
-	</section> -->
+	</section>
 	<!-- Modal -->
-	<section></section>
-	</div>
+	<section class="modal hidden">
+		<div class="modal__content">
+			<figure class="btn-close">
+				<img src="./src/assets/icons/close.svg" alt="CLose icon">
+			</figure>
+			<div class="modal__slider">
+				<input type="radio" name="slider-1" id="radio-1" checked>
+				<input type="radio" name="slider-1" id="radio-2">
+				<input type="radio" name="slider-1" id="radio-3">
+				<div class="cards">
+					<label for="radio-1" class="card" id="card-1">
+						<img src="./src/assets/images/spiderman-2.png" alt="Spiderman Slider">
+					</label>
+					<label for="radio-2" class="card" id="card-2">
+						<img src="./src/assets/images/spiderman-3.png" alt="Spiderman Slider">
+					</label>
+					<label for="radio-3" class="card" id="card-3">
+						<img src="./src/assets/images/spiderman-4.png" alt="Spiderman Slider">
+					</label>
+				</div>
+			</div>
+			<button class="btn-modal">Lo quiero!</button>
+		</div>
+	</section>
+	<script src="./src/js/app.js"></script>
 </body>
 
 </html>
