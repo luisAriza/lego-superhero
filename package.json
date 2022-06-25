@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel -p 2664",
     "build": "rm -rf dist && parcel build --no-source-maps --public-url .",
-    "deploy": "gh-pages -d"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,23 @@
+@font-face {
+  font-family: "Kdam Thmor Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/KdamThmorPro.woff2") format("woff2"),
+    url("../assets/fonts/KdamThmorPro.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Regular.woff") format("woff");
+}
+
 :root {
-  --Font1: 'Lato', sans-serif;
-  --Font2: 'Kdam Thmor Pro', sans-serif;
+  --Font1: "Kdam Thmor Pro", sans-serif;
+  --Font2: "Lato", sans-serif;
   --xs: 13px;
   --sm: 16px;
   --md: 20px;
@@ -10,7 +27,7 @@
   --secondary-color: #036cb6;
   --variation-color: #d5040a;
   --light-color: #ffffff;
-  --dark-color: #141414;
+  --dark-color: #1f1f1f;
 }
 
 * {
@@ -31,9 +48,10 @@
   display: grid;
   grid-template-columns: 55% 45%;
   grid-template-rows: 20% 50% 30%;
-  grid-template-areas: "header  aside"
-                        "main    aside"
-                        "footer  aside";
+  grid-template-areas:
+    "header  aside"
+    "main    aside"
+    "footer  aside";
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -68,7 +86,6 @@
 .navbar__items {
   display: flex;
   justify-content: space-evenly;
-  font-family: var(--Font2);
   list-style: none;
 }
 .navbar__items a {
@@ -99,16 +116,16 @@
 .main-content p:first-child {
   margin: 0 0 -12px 40px;
   font-size: var(--lg);
-  font-weight: 400;
 }
 .main-content h1 {
   margin-bottom: 28px;
   font-size: var(--xl);
-  font-weight: 900;
 }
 .main-content p:last-child {
-  width: 65%;
-  font-weight: 300;
+  width: 75%;
+  font-family: var(--Font2);
+  font-weight: 400;
+  line-height: 20px;
 }
 
 @keyframes main {
@@ -134,7 +151,6 @@
   background-color: var(--primary-color);
 }
 .side-content p {
-  font-family: var(--Font2);
   font-size: var(--lg);
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -197,10 +213,10 @@
 .footer figure:hover img {
   cursor: pointer;
   transform: translateY(-20px) scale(1.1);
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .footer figure:not(:hover) img {
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .footer figure img {
   width: 160px;
@@ -262,7 +278,8 @@
   }
 }
 @keyframes scaling {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0.4);
   }
   40% {
@@ -284,7 +301,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 4;
 }
 .modal__content {
@@ -333,7 +350,7 @@
   left: 0;
   right: 0;
   border-radius: 16px;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
   cursor: pointer;
   background-color: var(--primary-color);
 }
@@ -363,7 +380,7 @@
 .btn-modal {
   width: 300px;
   height: 60px;
-  font-family: var(--Font2);
+  font-family: var(--Font1);
   font-size: var(--md);
   cursor: pointer;
   border: 1px solid var(--dark-color);
