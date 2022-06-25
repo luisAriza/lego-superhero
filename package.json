@@ -1,0 +1,33 @@
+{
+  "name": "lego_superhero",
+  "version": "1.0.0",
+  "description": "",
+  "parcel": {
+    "transforms": {
+      "*.html": [
+        "parcel-transformer-google-fonts"
+      ]
+    }
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel -p 2664",
+    "build": "rm -rf dist && parcel build --no-source-maps --public-url .",
+    "deploy": "gh-pages -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisAriza/lego_superhero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisAriza/lego_superhero/issues"
+  },
+  "homepage": "https://github.com/luisAriza/lego_superhero#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.2"
+  }
+}
