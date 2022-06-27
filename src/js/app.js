@@ -6,7 +6,6 @@ btnSpiderman.addEventListener("click", () => {
   modal.classList.remove("hidden");
   modal.classList.add("visible");
 });
-
 btnClose.addEventListener("click", () => {
   modal.classList.add("hidden");
   modal.classList.remove("visible");
