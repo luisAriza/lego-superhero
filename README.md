@@ -1,6 +1,6 @@
 # Lego: SuperHero
 
-Esta es una pagina de **Lego** hecha con <ins>HTML</ins> y <ins>CSS</ins> puro, manipulé el DOM con <ins>JavaScript</ins> para poder agregarle un **modal** de los diferetes juguetes Lego y se aplicó **Responsive Design** para las diferentes pantallas.
+Esta es una pagina de [Lego](https://luisariza.github.io/lego_superhero/) hecha con <ins>HTML</ins> y <ins>CSS</ins> puro, manipulé el DOM con <ins>JavaScript</ins> para poder agregarle un **modal** de los juguetes de Lego, le agregué **animaciones** para hacerlo llamativo a la vista y apliqué **Responsive Design** para los diferentes tamaños de pantalla.
 
 Se integró la herramienta de [**Parcel**](https://parceljs.org/) para automatizar y optimizar el codigo.
 
